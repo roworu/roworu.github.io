@@ -1,0 +1,6 @@
+[
+    {
+      "label": "hugo server, show drafts",
+      "command": "hugo server -D --disableFastRender"
+    },
+]
