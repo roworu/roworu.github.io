@@ -1,0 +1,27 @@
+baseURL: https://roworu.github.io
+locale: en-us
+title: roworu
+theme: PaperMod
+params:
+  env: production
+  defaultTheme: dark
+  ShowShareButtons: true
+  ShareButtons:
+    - linkedin
+    - x
+    - reddit
+  ShowReadingTime: true
+  ShowCodeCopyButtons: true
+  ShowPostNavLinks: true
+  UseHugoToc: false
+  hideFooter: true
+  homeInfoParams:
+    Title: About
+    Content: "Hey! My name is roworu, I am a Software developer, "
+  socialIcons:
+    - name: Github
+      url: https://github.com/roworu
+    - name: Telegram
+      url: https://t.me/roworu
+assets:
+  favicon: ./assets/favicon.png

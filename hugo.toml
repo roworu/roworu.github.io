@@ -1,8 +1,0 @@
-baseURL = "https://roworu.github.io"
-locale = "en-us"
-title = "roworu"
-
-theme = "PaperMod"
-[params]
-defaultTheme = "dark"
-disableThemeToggle = true
