@@ -1,6 +1,11 @@
 [
     {
       "label": "hugo server, show drafts",
-      "command": "hugo server -D --disableFastRender"
+      "command": "(sleep 1 && xdg-open 'http://localhost:1313') & hugo server -D --disableFastRender"
     },
+
+    {
+      "label": "pull submodules for theming",
+      "command": "git submodule update --init --recursive"
+    }
 ]
