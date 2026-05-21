@@ -22,6 +22,8 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
+    env:
+      HUGO_CACHEDIR: /tmp/hugo_cache
 
     steps:
       
@@ -35,6 +37,14 @@ jobs:
         uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: latest
+
+      - name: setup cache
+        uses: actions/cache@v4
+        with:
+          path: ${{ env.HUGO_CACHEDIR }}
+          key: ${{ runner.os }}-hugomod-${{ hashFiles('**/go.sum') }}
+          restore-keys: |
+            ${{ runner.os }}-hugomod-
 
       - name: build
         run: hugo --minify
