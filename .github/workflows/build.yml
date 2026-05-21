@@ -16,7 +16,7 @@ concurrency:
   
 jobs:
 
-  deploy:
+  build_deploy:
     
     environment:
       name: github-pages
