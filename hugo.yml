@@ -24,4 +24,4 @@ params:
     - name: Telegram
       url: https://t.me/roworu
 assets:
-  favicon: ./assets/favicon.png
+  favicon: ./assets/favicon.ico
