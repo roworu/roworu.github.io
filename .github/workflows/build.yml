@@ -1,4 +1,4 @@
-name: Build using huge and deploy to Pages
+name: Build hugo, deploy to Pages
 
 on:
   push:
